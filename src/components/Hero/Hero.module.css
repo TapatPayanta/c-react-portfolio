@@ -1,0 +1,109 @@
+.hero_wrapper {
+    background-image: linear-gradient(to right top, #845ec2, #7466c8, #626ecc, #4e74cf, #377ad0, #2180cd, #0a85c9, #0089c4, #008db9, #0090a7, #009091, #008f7a);
+    height: 500px;
+    overflow: hidden;
+
+    & .container {
+        max-width: 1170px;
+        margin: 0 auto;
+
+        & .hero_con {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 100px;
+
+            & .hero_info {
+                & .text_1 {
+                    font-size: 32px;
+                    font-weight: bold;
+                    color: #FF647F;
+                }
+
+                & .text_2 {
+                    font-size: 64px;
+                    font-weight: bold;
+                    color: #FEBE10;
+                }
+
+                & .text_3 {
+                    font-size: 32px;
+                    color: #fff;
+                }
+
+                & .text_4 {
+                    font-size: 16px;
+                    margin-top: 25px;
+                    color: #fff;
+                }
+
+                & .hero_social {
+                    display: flex;
+                    list-style: none;
+                    margin-top: 25px;
+
+                    & .button {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 20px;
+                        width: 150px;
+                        height: 60px;
+                        background-color: #FF92A5;
+                        border-radius: 30px;
+                        transition: 0.3s;
+                        cursor: pointer;
+
+                        & hover {
+                            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+                        }
+
+                        & a {
+                            text-decoration: none;
+                            font-weight: bold;
+                            color: #fff;
+                        }
+                    }
+
+                    & li {
+                        margin-top: 15px;
+                        margin-right: 10px;
+
+                        & svg {
+                            width: 30px;
+                            height: 30px;
+                            color: #333;
+                        }
+                    }
+                }
+            }
+
+            & .hero_img {
+                & img {
+                    width: 350px;
+                    height: 350px;
+                    border-radius: 100%;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .hero_wrapper {
+        height: auto;
+
+        & .hero_con {
+            flex-direction: column;
+            margin: 50px 0;
+            padding: 20px;
+
+            & .hero_info & .hero_img {
+                width: 100%;
+            }
+        }
+    }
+}
