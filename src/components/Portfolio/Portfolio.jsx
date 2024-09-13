@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './portfolio.module.css'
+import styles from './Portfolio.module.css'
 import Title from 'react-parallax-tilt'
 
 function Portfolio() {
